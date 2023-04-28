@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='registro de contactos'>
+    <meta name="keywords" content="registro,reportes,formularios">
+    <meta name="authors" content="users">
+    <title>Registro</title>
+    <link rel="stylesheet" href="regis.css">
+    <script src='js/registro.js'> </script>
+
+  </head>
+  <body>
+    <header class='header'>
+      <h1 id='titulo' >Registro de Contactos</h1>
+    </header> 
+    <form id='survey-form'> 
+      <div id="form-group">
+        <label id='dni' form='dni'>DNI : </label>
+        <input type="text" name="dni" id="dni" class="form-control" placeholder='Ingrese su dni' required/>
+      </div>
+
+      <!--aqui registraremos el ingreso del nombre-->
+      <div class="form-group">
+        <label id='name-label' form='name'>Tu nombre: </label>
+        <input type="text" name='name' id='name' class='form-control' placeholder='Ingrese su nombre' required />
+      </div>
+
+      <!--aqui registraremos el ingreso del apellido paterno-->
+      <div class='form-group'>
+      <label id="apellidoPaterno" for='apellidoPaterno'>Apellido Paterno: </label>
+      <input type="text" name="apellidoPaterno" id="apellidoPaterno" class='form-control' placeholder='Ingrese su apellido paterno' required>
+      </div>
+
+      
+      <!--aqui registraremos el ingreso del apellido materno-->
+      <div class='form-group'>
+      <label id="apellidoMaterno" for='apellidoMaterno'>Apellido Materno: </label>
+      <input type="text" name="apellidoMaterno" id="apellidoMaterno" class='form-control' placeholder='Ingrese su apellido materno' required>
+      </div>
+  
+      <!--aqui  registraremos el email-->
+      <div class='form-group'>
+        <label id="email" for="email">Email: </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese el email" required>
+      </div>
+
+      <!--registrando la fecha de nacimiento-->
+      <div class="form-group">
+        <label id='fechaNacimiento' for="fechaNacimiento"> Fecha de Nacimiento: </label>
+        <input type="date" name='fechaNacimiento' id="fechaNacimiento" class="form-control" required>
+      </div>
+
+      <!--registrando  la direccion-->
+      <div class='form-group'>
+        <label  id='direccion' for="direccion">Direccion: </label>
+        <input type="text" name="direccion"  id="direccion" class="form-control" placeholder='Ingrese su direccion' required>
+      </div>
+
+      <!--registrando el telefono-->
+      <div class='form-group'>
+        <label id='telefono' for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" name="telefono" class="form-control" placeholder="Ingrese el telefono" required>
+      </div>
+
+      <!--registrando el genero-->
+      <div class="form-group">
+        <label > 
+          <input type="radio" name="genero" value="varon" checked>Varon
+        </label>
+        <label ></label>
+          <input type="radio" name="genero" value="varon" checked>Mujer
+      </div>
+      <!--guardando,eliminando la informacion-->
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-buttom">Guardar</button>
+      </div>
+      <div class="form-group">
+        <button type="delete" id="delete" class="submit-buttom">Eliminar</button>
+      </div>
+       <div class="form-group">
+        <button onclick="contenido">Mostrar</button>
+      </div>
+
+    </form>
+  </body>
+
+</html>
